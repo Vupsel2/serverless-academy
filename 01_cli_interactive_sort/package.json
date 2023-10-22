@@ -1,0 +1,19 @@
+{
+  "name": "01_cli_interactive_sort",
+  "version": "1.0.0",
+  "author": "Andrii Makov <makandro11@gmail.com>",
+  "description": "my first project",
+  "main": "01_cli_interactive_sort.js",
+  "scripts": {
+    "test": "node \"c:\\Users\\Я\\Desktop\\jss\\serverless-academy\\01_cli_interactive_sort\\01_cli_interactive_sort.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vupsel2/serverless-academy.git/01_cli_interactive_sort"
+  },
+  "keywords": [
+    "JavaScript",
+    "js"
+  ],
+  "license": "ISC"
+}
