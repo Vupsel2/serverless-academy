@@ -1,0 +1,18 @@
+{
+  "name": "02_cli_primitive_db",
+  "version": "1.0.0",
+  "description": "02_CLI_PRIMITIVE_DB",
+  "main": "02_CLI_PRIMITIVE_DB.js",
+  "scripts": {
+    "test": "node \"c:\\Users\\Я\\Desktop\\jss\\serverless-academy\\02_CLI_PRIMITIVE_DB\\02_CLI_PRIMITIVE_DB.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vupsel2/serverless-academy.git/01_cli_interactive_sort"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Andrii Makov",
+  "license": "ISC"
+}
