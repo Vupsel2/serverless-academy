@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vupsel2/serverless-academy.git/01_cli_interactive_sort"
+    "url": "https://github.com/Vupsel2/serverless-academy/tree/main/02_CLI_PRIMITIVE_DB"
   },
   "keywords": [
     "JavaScript"
