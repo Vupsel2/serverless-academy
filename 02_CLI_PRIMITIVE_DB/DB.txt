@@ -1,0 +1,4 @@
+{"user":"Andrii","gender":"male","age":"19"}
+{"user":"vanya","gender":"male","age":"23"}
+{"user":"vanya","gender":"male","age":"23"}
+{"user":"dima","gender":"male","age":"56"}
