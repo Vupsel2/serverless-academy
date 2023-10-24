@@ -1,0 +1,26 @@
+{
+  "name": "03_cli_telegram_console_sender",
+  "version": "1.0.0",
+  "description": "console_sender",
+  "main": "app.js",
+  "scripts": {
+    "test": "node C:\\Users\\Я\\Desktop\\jss\\serverless-academy\\03_CLI_TELEGRAM_CONSOLE_SENDER\\app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vupsel2/serverless-academy.git#main"
+  },
+  "keywords": [
+    "sender"
+  ],
+  "author": "Andrii Makov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vupsel2/serverless-academy/issues"
+  },
+  "homepage": "https://github.com/Vupsel2/serverless-academy/tree/main#readme",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}
