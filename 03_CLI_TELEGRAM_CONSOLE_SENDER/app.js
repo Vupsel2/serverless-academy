@@ -27,6 +27,11 @@ bot.getUpdates().then((updates) => {
     .action((path) => {
       bot.sendPhoto(chatId, path)
     });
-    
+    program
+    .command('--help')
+    .description('Display help')
+    .action(() => {
+        program.help();
+    });
     program.parse();
   });
