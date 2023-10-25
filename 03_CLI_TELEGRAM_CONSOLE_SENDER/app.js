@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const { program } = require('commander');
 let chatId;
 
-const token = '6496092821:AAH_kBpXFbClKXWsLNELBzOTM4N90znf0nI';
+const token = 'Token';
 
 const bot = new TelegramBot(token, {webhooks: true});
 
