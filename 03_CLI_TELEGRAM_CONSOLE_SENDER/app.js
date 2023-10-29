@@ -4,7 +4,7 @@ let chatId;
 
 const token = 'Token';
 
-const bot = new TelegramBot(token, {webhooks: true});
+const bot = new TelegramBot(process.env.token, {webhooks: true});
 
 bot.getUpdates().then((updates) => {
     updates.forEach((update) => {

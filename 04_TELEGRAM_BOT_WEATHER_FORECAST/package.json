@@ -1,0 +1,26 @@
+{
+  "name": "04_telegram_bot_weather_forecast",
+  "version": "1.0.0",
+  "description": "weather telegram bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "set_env": "env.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vupsel2/serverless-academy.git#main"
+  },
+  "author": "Andrii Makov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vupsel2/serverless-academy/issues"
+  },
+  "homepage": "https://github.com/Vupsel2/serverless-academy/tree/main#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+  
+}
