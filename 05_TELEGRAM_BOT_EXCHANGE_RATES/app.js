@@ -3,8 +3,10 @@ const axios = require('axios');
 
 let city
 
+const bot = new TelegramBot(process.env.telegram_token, {polling: true})
 
-const bot = new TelegramBot(process.env.token, {polling: true});
+const weather_api =process.env.weather_api
+
 
 bot.on("polling_error", console.log);
 
@@ -90,7 +92,7 @@ bot.onText(/every 3 hours/, (msg) => {
             one_time_keyboard: true
         }
     };
-    answer=axios.get(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${city}&appid=${process.env.API_KEY}&lang=en`)
+    answer=axios.get(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${city}&appid=${weather_api}&lang=en`)
   .then(function (answer) {
     
     for (let i = 0; i < 8; i++){
@@ -119,7 +121,7 @@ bot.onText(/every 6 hours/, (msg) => {
             one_time_keyboard: true
         }
     };
-    answer=axios.get(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${city}&appid=${process.env.API_KEY}&lang=en`)
+    answer=axios.get(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${city}&appid=${weather_api}&lang=en`)
   .then(function (answer) {
     
     for (let i = 0; i < 8; i+=2){
