@@ -1,0 +1,14 @@
+{
+  "name": "05_telegram_bot_exchange_rates",
+  "version": "1.0.0",
+  "description": "5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrii Makov",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
