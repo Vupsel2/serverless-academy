@@ -5,9 +5,6 @@ const myCache = new NodeCache();
 sellbuy={};
 let city
 
-
-
-
 const bot = new TelegramBot(process.env.telegram_token, {polling: true})
 
 const weather_api =process.env.weather_api

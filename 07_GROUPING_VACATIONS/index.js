@@ -31,7 +31,7 @@ for (const line of jsonObject){
     
     }
   
-    console.log(newjs);
+    //console.log(newjs);
     const jsonStr = JSON.stringify(newjs, null, 2);
     await fs.writeFile('07_GROUPING_VACATIONS\\example.json', jsonStr, 'utf8');
 
