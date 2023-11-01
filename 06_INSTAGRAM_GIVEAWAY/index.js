@@ -29,10 +29,10 @@ async function create(){
         }
 
     }
-
+    base=unique;
     }
     // console.log(uniqsize)
-    console.log("Number of unique names wich ecist in all Files: " + base.size)
+    console.log("Number of unique names which exist in all Files: " + base.size)
     // base.clear();
     // base.add(unique.values());
     
@@ -97,14 +97,16 @@ async function create_uniq(){
 }
 
 
+async function start(){
+    await Promise.allSettled([create_uniq(), create_10(), create()]);
+    console.timeEnd("Time consumed");
+}
 
- create_uniq().then(() => {
-     create().then(() => {
-        create_10().then(() => {
-            console.timeEnd("Time consumed");
-    });
- });
- });
+start()
+          
+
+ 
+ 
  
 
 
