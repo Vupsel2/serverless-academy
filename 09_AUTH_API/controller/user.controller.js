@@ -2,7 +2,9 @@ const db=require('../db');
 const bcrypt = require('bcrypt');
 const{validationResult} = require('express-validator');
 const jwt = require('jsonwebtoken');
-const {secret} = require('./config');
+const {secret} = require('../config');
+
+
 
 const GenerateToken=(id,mail)=>{
     
@@ -17,7 +19,9 @@ const GenerateToken=(id,mail)=>{
    
     return tokens
 }
+
 class UserController{
+    
     async SignUp(req,res){
 
         try{
@@ -67,17 +71,9 @@ class UserController{
 
     async GetUser(req,res){
         try{
-            
-            const {token} = req.body;
-            
-            try {
-                const decoded = jwt.verify(token, secret, { ignoreExpiration: false });
-                res.status(200).json({id:decoded.id, mail:decoded.mail});
-            }catch(e){
-                console.log(e);
-                res.status(502).json({error:"your JWT token is invalid or expired"});
-            }
-            
+            const decoded = req.decoded
+            res.status(200).json({id:decoded.id, mail:decoded.mail});
+
         }catch(e){
             console.log(e);
         }
